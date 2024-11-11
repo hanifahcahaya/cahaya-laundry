@@ -1,116 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cahaya Laundry</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <style>
-    .navbar-custom {
-      background-color: #FFF0F3;
-      height: 70px;
-    }
-    .text-ungu {
-      color: #6D4C6C;
-    }
-    .nav-item {
-      height: 100%;
-    }
-    .nav-link {
-      color: #6D4C6C;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      transition: background-color 0.3s;
-    }
-    .nav-link:hover {
-      background-color: #6D4C6C;
-      color: white !important;
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahaya Laundry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+      .navbar-custom {
+        background-color: #FFF0F3;
+        height: 70px;
+      }
+      .text-ungu {
+        color: #6D4C6C;
+      }
+      .nav-item {
+        height: 100%;
+      }
+      .nav-link {
+        color: #6D4C6C;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        transition: background-color 0.3s;
+      }
+      .nav-link:hover {
+      background-color: #6D4C6C; /* Background untuk hover */
+      color: white !important; /* Warna text untuk hover */
     }
     .nav-link.active {
-      color: white !important;
-      background-color: #6D4C6C;
+      color: white !important; /* Warna Text untuk active link */
+      background-color: #6D4C6C; /* Background untuk active link */
     }
-    .accordion-button.custom-bg {
-      background-color: #A36BA0;
-      color: white;
-    }
-    .accordion-button.custom-bg:hover {
-      background-color: #A36BA0;
-      color: white !important;
-    }
-    .accordion-button:focus, .accordion-button.custom-bg:focus {
-      outline: none;
-      box-shadow: none;
-    }
-    .accordion-button.custom-bg:hover::after,
-    .accordion-button:not(.collapsed)::after {
-      color: white !important;
-    }
-    .accordion-button:not(.collapsed) {
-      color: white !important;
-      background-color: #A36BA0 !important;
-      outline: none;
-      box-shadow: none;
-    }
-    .custom-divider {
-      display: flex;
-      align-items: center;
-      margin: 20px 0;
-    }
-    .custom-divider {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #FF69B4;
-      font-size: 1.5rem;
-      margin: 1.5rem 0;
-    }
-    .custom-divider::before,
-    .custom-divider::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background-color: #6D4C6C;
-      margin: 0 0.5rem;
-    }
-  </style>
-</head>
-<link rel="stylesheet" href="responsive.css">
-<body>
+    /* Style dasar untuk tombol accordion */
+  .accordion-button.custom-bg {
+    background-color: #A36BA0;
+    color: white;
+  }
 
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <img class="me-2" width="48" height="48" src="asset/icon/washing-machine.png" alt="Logo">
-        <span class="fs-4 text-orange"><b>Cahaya Laundry</b></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="index.html" class="nav-link"><b>HOME</b></a></li>
-          <li class="nav-item"><a href="layanan.html" class="nav-link"><b>LAYANAN</b></a></li>
-          <li class="nav-item"><a href="daftar-harga.html" class="nav-link"><b>DAFTAR HARGA</b></a></li>
-          <li class="nav-item"><a href="tentang.html" class="nav-link"><b>TENTANG</b></a></li>
-          <li class="nav-item"><a href="galeri.html" class="nav-link"><b>GALERI</b></a></li>
-        </ul>
+  .accordion-button.custom-bg:hover {
+    background-color: #A36BA0;
+    color: white !important;
+  }
+  
+  .accordion-button:focus, .accordion-button.custom-bg:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .accordion-button.custom-bg:hover::after,
+  .accordion-button:not(.collapsed)::after {
+    color: white !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: #A36BA0 !important;
+    outline: none;
+    box-shadow: none;
+  }
+      .custom-divider {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .custom-divider {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        color: #FF69B4; /* Pink color untuk bintang */
+        font-size: 1.5rem; 
+        margin: 1.5rem 0; 
+      }
+      .custom-divider::before,
+      .custom-divider::after {
+        content: "";
+        flex: 1; 
+        height: 1px; 
+        background-color: #6D4C6C; 
+        margin: 0 0.5rem; 
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img class="me-2" width="48" height="48" src="asset/icon/washing-machine.png" alt="Logo">
+          <span class="fs-4 text-orange"><b>Cahaya Laundry</b></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link"><b>HOME</b></a></li>
+            <li class="nav-item"><a href="layanan.html" class="nav-link"><b>LAYANAN</b></a></li>
+            <li class="nav-item"><a href="daftar-harga.html" class="nav-link"><b>DAFTAR HARGA</b></a></li>
+            <li class="nav-item"><a href="tentang.html" class="nav-link"><b>TENTANG</b></a></li>
+            <li class="nav-item"><a href="galeri.html" class="nav-link"><b>GALERI</b></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <div class="separator"></div>
-  <br>
-
+    </nav>
+    <!-- Separator Line -->
+    <div class="separator"></div>
+    <br>
+  <!-- Layanan Section -->
   <div class="product-section">
     <div class="container">
       <h2 class="text-center text-ungu"><b>Layanan Kami</b></h2>
       <div class="custom-divider"><span>★</span></div>
       <div class="accordion" id="layananAccordion">
+        <!-- Laundry Kiloan -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingKiloan">
             <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKiloan" aria-expanded="true" aria-controls="collapseKiloan">
@@ -129,6 +136,7 @@
             </div>
           </div>
         </div>
+        <!-- Laundry Satuan -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSatuan">
             <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSatuan" aria-expanded="false" aria-controls="collapseSatuan">
@@ -147,6 +155,7 @@
             </div>
           </div>
         </div>
+        <!-- Laundry Tas -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTas">
             <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTas" aria-expanded="false" aria-controls="collapseTas">
@@ -165,6 +174,7 @@
             </div>
           </div>
         </div>
+        <!-- Laundry Sepatu -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSepatu">
             <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSepatu" aria-expanded="false" aria-controls="collapseSepatu">
@@ -183,51 +193,135 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingExpress">
-            <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExpress" aria-expanded="false" aria-controls="collapseExpress">
-              Layanan Express
-            </button>
-          </h2>
-          <div id="collapseExpress" class="accordion-collapse collapse" aria-labelledby="headingExpress" data-bs-parent="#layananAccordion">
-            <div class="accordion-body">
-              <strong>Deskripsi:</strong> Butuh pakaian yang dicuci dengan cepat? Layanan express kami dapat memberikan hasil yang cepat tanpa mengorbankan kualitas. Ideal untuk Anda yang membutuhkan pakaian dalam waktu singkat.
-              <br><strong>Keunggulan:</strong>
-              <ul>
-                <li>Waktu pengerjaan lebih cepat, biasanya dalam 6 jam</li>
-                <li>Tanpa mengurangi kualitas pencucian</li>
-                <li>Fleksibilitas dalam memilih waktu pengambilan</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <!-- Laundry Express -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingExpress">
+      <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExpress" aria-expanded="false" aria-controls="collapseExpress">
+        Laundry Express
+      </button>
+    </h2>
+    <div id="collapseExpress" class="accordion-collapse collapse" aria-labelledby="headingExpress" data-bs-parent="#layananAccordion">
+      <div class="accordion-body">
+        <strong>Deskripsi:</strong> Layanan Laundry Express kami dirancang untuk Anda yang membutuhkan pencucian cepat tanpa mengorbankan kualitas. Pakaian Anda akan siap dalam waktu singkat.
+        <br><strong>Keunggulan:</strong>
+        <ul>
+          <li>Pencucian cepat dengan hasil bersih optimal</li>
+          <li>Produk pencucian berkualitas tinggi untuk menjaga serat kain</li>
+          <li>Pelayanan cepat dengan tetap menjaga kualitas</li>
+        </ul>
+      </div>
+    </div>
+  </div>     
+  <!-- Laundry Setrika -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingIroning">
+      <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIroning" aria-expanded="false" aria-controls="collapseIroning">
+        Layanan Khusus Setrika
+      </button>
+    </h2>
+    <div id="collapseIroning" class="accordion-collapse collapse" aria-labelledby="headingIroning" data-bs-parent="#layananAccordion">
+      <div class="accordion-body">
+        <strong>Deskripsi:</strong> Layanan setrika khusus kami hadir untuk memudahkan Anda, terutama bagi ibu rumah tangga yang ingin pakaian selalu rapi tanpa repot. Setiap pakaian disetrika dengan teliti, memastikan hasil yang halus, bebas kusut, dan siap pakai.
+        <br><strong>Keunggulan:</strong>
+        <ul>
+          <li>Setrika dengan suhu optimal sesuai jenis kain</li>
+          <li>Hasil akhir yang rapi dan tahan lama</li>
+          <li>Proses cepat dan aman untuk semua jenis pakaian</li>
+        </ul>
       </div>
     </div>
   </div>
-  
-  <div class="separator"></div>
- <footer class="text-center text-white" style="background-color: #6D4C6C;">
+  <!-- Laundry Khusus Cuci -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSpecialWashing">
+      <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpecialWashing" aria-expanded="false" aria-controls="collapseSpecialWashing">
+        Layanan Khusus Cuci
+      </button>
+    </h2>
+    <div id="collapseSpecialWashing" class="accordion-collapse collapse" aria-labelledby="headingSpecialWashing" data-bs-parent="#layananAccordion">
+      <div class="accordion-body">
+        <strong>Deskripsi:</strong> Layanan cuci khusus kami dirancang untuk Anda yang ingin memastikan setiap pakaian dicuci dengan perhatian ekstra. Cocok bagi ibu rumah tangga yang ingin hasil cucian maksimal tanpa harus repot sendiri.
+        <br><strong>Keunggulan:</strong>
+        <ul>
+          <li>Pencucian mendalam dengan produk ramah kain berkualitas tinggi</li>
+          <li>Penanganan khusus untuk bahan halus dan pakaian bernilai tinggi</li>
+          <li>Hasil cucian yang bersih, wangi, dan lembut di kulit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Laundry Boneka -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingToyLaundry">
+      <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseToyLaundry" aria-expanded="false" aria-controls="collapseToyLaundry">
+        Laundry Boneka
+      </button>
+    </h2>
+    <div id="collapseToyLaundry" class="accordion-collapse collapse" aria-labelledby="headingToyLaundry" data-bs-parent="#layananAccordion">
+      <div class="accordion-body">
+        <strong>Deskripsi:</strong> Layanan Laundry Boneka kami memastikan setiap boneka dan mainan lembut dicuci dengan aman, higienis, dan lembut, sehingga kembali bersih dan nyaman bagi anak Anda.
+        <br><strong>Keunggulan:</strong>
+        <ul>
+          <li>Pencucian lembut untuk menjaga keutuhan dan kelembutan boneka</li>
+          <li>Pembersihan menyeluruh yang aman untuk anak-anak</li>
+          <li>Hasil yang bebas dari debu dan alergen, serta wangi segar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Laundry Bedcover -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingBedcoverLaundry">
+      <button class="accordion-button custom-bg collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBedcoverLaundry" aria-expanded="false" aria-controls="collapseBedcoverLaundry">
+        Laundry Bedcover
+      </button>
+    </h2>
+    <div id="collapseBedcoverLaundry" class="accordion-collapse collapse" aria-labelledby="headingBedcoverLaundry" data-bs-parent="#layananAccordion">
+      <div class="accordion-body">
+        <strong>Deskripsi:</strong> Layanan Laundry Bedcover kami memberikan pencucian mendalam untuk bedcover Anda, menghilangkan debu, kotoran, dan alergen agar tidur Anda lebih nyaman dan bersih.
+        <br><strong>Keunggulan:</strong>
+        <ul>
+          <li>Pencucian mendalam untuk bedcover tebal dan besar</li>
+          <li>Menggunakan produk khusus yang menjaga kelembutan dan warna</li>
+          <li>Hasil yang bersih, wangi, dan bebas dari alergen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+    <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #6D4C6C;"> <!-- Ubah warna di sini -->
     <div class="container py-4">
-      <section class="mb-4">
-        <a href="https://www.facebook.com/share/pZ81UCW3hyEafMhQ/" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/laundry.cahaya_?igsh=MzM1cDVuYmp4Y3d2" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/6281285037772" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-whatsapp"></i></a>
-      </section>
+     <!-- Social Media Link -->
+     <section class="mb-4">
+      <a href="https://www.facebook.com/share/pZ81UCW3hyEafMhQ/" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/laundry.cahaya_?igsh=MzM1cDVuYmp4Y3d2" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/6281285037772" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-whatsapp"></i></a>
+    </section>
       <section class="mb-4">
         <h5 class="text-uppercase" style="color: #FFF; font-family: 'Baloo 2', sans-serif; font-size: 2.5rem;">Cahaya Laundry</h5>
         <p>Layanan laundry profesional untuk Kalipucang dan sekitarnya. Kami melayani dengan sepenuh hati untuk memberikan hasil terbaik bagi Anda.</p>
       </section>
+      <!-- Contact Info -->
       <section class="text-white">
         <p><i class="fas fa-phone-alt"></i> Telepon: +62 812 8503 7772</p>
         <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Kalipucang Raya, Kalipucang</p>
       </section>
     </div>
-    <div class="text-center p-3" style="background-color: #5A3E4A;">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #5A3E4A;"> <!-- Ubah warna di sini -->
       © 2024 Cahaya Laundry. All Rights Reserved.
     </div>
+    <!-- Link Font Awesome untuk ikon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+  </html>
